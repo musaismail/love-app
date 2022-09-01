@@ -1,0 +1,9 @@
+.entirebook{
+    background-image: url("../../assets/asset1/lovebook\ cover.png");
+    background-position: cover;
+}
+.create{
+    font-size: 40px;
+    color:white;
+background-color: red;
+}

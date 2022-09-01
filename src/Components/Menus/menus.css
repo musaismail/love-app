@@ -1,0 +1,22 @@
+.rowF{
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 100%;
+    text-align: center;
+    background-color: #d3341f;
+    margin: 0px auto 0px auto;
+    
+}
+.column{
+    /* flex: 20%; */
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.column:hover{
+    background-color: whitesmoke;
+    color: #d3341f;
+    text-decoration: none;
+    font-size: 20px;
+}

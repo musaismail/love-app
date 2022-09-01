@@ -1,0 +1,89 @@
+.mainKuidas{
+    width: 100%;
+    margin: 0px auto 0px auto;
+    padding: 3% 2% 3% 2%;
+}
+.howToMainText{
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2%;
+}
+.howtoparagraph{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.listItem{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.submitInfor{
+    border: none;
+    margin: 0px auto 0px auto;
+    padding: 1% 5%;
+    background-color: #cf0606;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.submitInfor:hover{
+    border: 1px solid #cf0606;
+    background-color: whitesmoke;
+    color: #cf0606;
+    cursor: pointer;
+}
+.farewell{
+    width: 100%;
+    margin-top: 25%;
+    box-shadow: 5px 5px 20px #ccc;
+    border-radius: 47%;
+}
+@media screen and (min-width: 250px) and (max-width: 500px) {
+    .howToMainText{
+        font-size: 1.5rem;
+    }
+    .howtoparagraph{
+        font-size: 1rem;
+    }
+    .listItem{
+        font-size: 1rem;
+    }
+    .farewell{
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+    
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    .howToMainText{
+        font-size: 2rem;
+    }
+    .howtoparagraph{
+        font-size: 1.2rem;
+    }
+    .listItem{
+        font-size: 1.2rem;
+    }
+    .farewell{
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+    
+}
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+    .howToMainText{
+        font-size: 2.1rem;
+    }
+    .howtoparagraph{
+        font-size: 1.4rem;
+    }
+    .listItem{
+        font-size: 1.4rem;
+    }
+    .farewell{
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }   
+}
