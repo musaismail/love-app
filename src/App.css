@@ -1,0 +1,9 @@
+.saveimage{
+    background-image:  url("./assets/asset1/cover2.png");
+    background-position: fixed;
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+   
+}

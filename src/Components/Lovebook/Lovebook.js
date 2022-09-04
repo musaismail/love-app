@@ -5,19 +5,21 @@ import Start from "../Start/Start";
 import Modal from "../Modal";
 import Dummy from "../Dummy";
 import "./lovebook.css";
+import SavedImage from "../SavedImage";
 
 function Lovebook() {
   const [modalOpen, setModalOpen] = useState(false);
   const [start, setStart] = useState(false);
   const [DummyModal, setDummyModal] = useState(false);
+  const [saveimg, setSaveimg] = useState(false);
 
   return (
-    <div className="entirebook w-[100%] h-screen">
-      <h1 className="create font-semibold  text-center">
-        Create Characters For Your Books
-      </h1>
-      <div className="my-[20px] mx-[20px] flex justify-center items-center ">
-        <Creategiver title="Create Giver" setModalOpen={setModalOpen} />
+    <div className="entirebook w-full h-full">
+      <h1 className="create font-semibold  text-center">Create Characters</h1>
+      <div className="my-[40px] mx-[40px] ml-[50px] flex w-[100%] justify-center items-center  ">
+        <div>
+          <Creategiver title="Create Giver" setModalOpen={setModalOpen} />
+        </div>
         <div className=" absolute  ">
           {modalOpen && (
             <Modal setOpenModal={setModalOpen} setStart={setStart} />
@@ -29,9 +31,21 @@ function Lovebook() {
               setDummyModal={setDummyModal}
             />
           )}
-          {DummyModal && <Dummy setDummyModal={setDummyModal} />}
+          {DummyModal && (
+            <Dummy
+              setDummyModal={setDummyModal}
+              setSaveimg={setSaveimg}
+              saveimg={saveimg}
+            />
+          )}
+          {saveimg && (
+            <SavedImage setSaveimg={setSaveimg} setDummyModal={setDummyModal} />
+          )}
         </div>
-        <Createreceiver title="Create Reciever" setModalOpen={setModalOpen} />
+        <div>
+          {" "}
+          <Createreceiver title="Create Reciever" setModalOpen={setModalOpen} />
+        </div>
       </div>
     </div>
   );

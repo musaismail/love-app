@@ -1,7 +1,13 @@
 .entirebook{
     background-image: url("../../assets/asset1/lovebook\ cover.png");
-    background-position: cover;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
 }
+
+
 .create{
     font-size: 40px;
     color:white;

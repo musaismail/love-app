@@ -194,13 +194,13 @@ function Dummy({ setDummyModal }) {
       <div className=" flex items-center justify-center ">
         <div className=" ">
           <div className="">
-            <div className=" head flex justify-center w-[131px] items-center absolute top-[35px] left-[227px] ">
+            <div className=" head flex justify-center w-[131px] items-center absolute top-[34px] left-[227px] ">
               <div className="">
                 <CaretLeftOutlined onClick={(e) => changeheadBackwards(e)} />
               </div>
               <div className="">
                 <img
-                  className="h-[100px] w-[110px]"
+                  className="h-[105px] w-[110px]"
                   src={head}
                   alt="dummy head"
                 />

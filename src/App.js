@@ -9,10 +9,12 @@ import Kontakt from "./Components/Kontakt/Kontakt";
 import Muugitingimused from "./Components/Muugitingimused/Muugitingimused";
 import Lovebook from "./Components/Lovebook/Lovebook";
 import SavedImage from "./Components/SavedImage";
+import Pdf from "./Components/pdf/Pdf";
+
 function App() {
   return (
     <div>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Routes>
           <Route>
             <Route path="/" element={<Home />} />
@@ -22,6 +24,7 @@ function App() {
             <Route path="/muugitingimused" element={<Muugitingimused />} />
             <Route path="/createlovebook" element={<Lovebook />} />
             <Route path="/saveimage" element={<SavedImage />} />
+            <Route path="/pdffile" element={<Pdf />} />
           </Route>
         </Routes>
       </BrowserRouter>
